@@ -118,7 +118,7 @@ export default function RegisterForm() {
 
     try {
       const { username, email, password } = form; // exclude confirmPassword
-      await axios.post("http://localhost:5000/api/register", {
+      await axios.post("https://officeform.onrender.com/api/register", {
         username,
         email,
         password,

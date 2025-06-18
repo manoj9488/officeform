@@ -229,7 +229,7 @@ export default function DetailsForm() {
         formData.append("resume", resume)
       }
 
-      const response = await axios.post("http://localhost:5000/api/submit", formData, {
+      const response = await axios.post("https://officeform.onrender.com/api/submit", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
